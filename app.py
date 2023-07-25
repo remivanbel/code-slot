@@ -47,4 +47,4 @@ for col in cols:
 # check if all the correct boxes, and none of the wrong boxes are checked
 if all(correct_boxes) and not any(wrong_boxes):
     st.balloons()
-    st.write('Proficiat!')
+    st.title(':tada: Proficiat :tada:')
