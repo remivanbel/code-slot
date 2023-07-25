@@ -6,7 +6,7 @@ random.seed(42)
 
 # can be adapted
 nb_columns = 4
-nb_rows = 4
+nb_rows = 6
 
 # should be adapted
 correct_answers = ['A9b', 'C3f', 'K2z','R8q','T3m']
