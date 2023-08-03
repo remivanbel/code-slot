@@ -9,8 +9,7 @@ random.seed(42)
 def deg2rad(deg):
     return deg * pi / 180
 
-st.title('cos + + - - +')
-st.title('sin - + - + +')
+st.title('cos + + - - +      sin - + - + +')
 
 your_angles = [0,0,0,0,0]
 cosinus = [0, 0, 0, 0, 0]
