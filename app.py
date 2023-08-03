@@ -30,17 +30,18 @@ for i, col in enumerate(st.columns(5)):
         ys = sin(angles)
         plt.plot(xs, ys, color = 'green')
 
-        plt.xlim(-r, r)
-        plt.ylim(-r, r)
-        plt.gca().set_aspect('equal')
-
-        your_angles[i] = st.slider('How many degrees?',0, 360, 30, step=30, key=i)
+        your_angles[i] = st.slider('How many degrees?',0, 360, 30, key=i)
         angle = your_angles[i]
         x = cos(deg2rad(angle))
         y = sin(deg2rad(angle))
         plt.plot([0, x], [0, y], color = "red")
         cosinus[i] = x
         sinus[i] = y
+
+        plt.xlim(-r, r)
+        plt.ylim(-r, r)
+        plt.gca().set_aspect('equal')
+        plt.axis('off')
         st.pyplot(plt.gcf())
 
 if np.all(np.sign(cosinus) == np.sign(check)) and np.all(np.all(np.sign(sinus) == np.sign(check_sinus))):
